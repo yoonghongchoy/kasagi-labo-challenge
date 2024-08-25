@@ -1,0 +1,27 @@
+{
+  "name": "kasagi-labo-challenge",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start:a": "ts-node src/challengeA.ts",
+    "start:b": "ts-node src/challengeB.ts",
+    "docker:build": "docker build -t kasagi-labo-challenge .",
+    "docker:run": "docker run -v $(pwd)/output:/usr/src/app/output kasagi-labo-challenge",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "ts-node": "^10.9.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}

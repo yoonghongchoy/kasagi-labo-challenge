@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+
+# TypeScript output directory
+dist/
+
+# Operating System Files
+.DS_Store
+
+# Project-specific files
+randomObjects.txt
+output/
